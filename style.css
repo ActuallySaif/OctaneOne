@@ -1,0 +1,109 @@
+:root{
+    --mainBg: #242024;
+    --redText: #E30220;
+    --whiteText: white;
+    --blackText: black;
+    --redAccents: #E30220;
+    --navSelected: 3px #E30220 solid;
+    --smallFont: 16px;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Bez';
+    src: url(Fonts/Bezmiar-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Mont';
+    background: var(--mainBg);
+}
+
+.headerContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+header{
+    padding: 60px 120px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav{
+    color: var(--whiteText);
+    font-size: var(--smallFont);
+    font-weight: 700;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: var(--whiteText);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navSelected{
+    border-bottom: var(--navSelected);
+}
+
+#hero{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.topBg{
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient(0deg, #FFF 0%, #242024 96.44%);
+    position: absolute;
+    top: 0;
+}
+
+.bottomBg{
+    width: 100vw;
+    height: 50vh;
+    background: radial-gradient(108.41% 108.41% at 50% 0%, #FFF 48.65%, #242024 91.83%);
+    position: absolute;
+    bottom: 0;
+}
+
+.circles{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    overflow: hidden;
+    z-index: 99;
+    width: 100%;
+}
+
+.outer, .inner1, .inner2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.lines{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
