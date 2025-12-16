@@ -4,8 +4,10 @@
     --whiteText: white;
     --blackText: black;
     --redAccents: #E30220;
+    --heroCarName: #6F6F6F;
     --navSelected: 3px #E30220 solid;
     --smallFont: 16px;
+    --bigFont: 40px;
 }
 
 @font-face {
@@ -67,6 +69,9 @@ nav a{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .topBg{
@@ -90,7 +95,7 @@ nav a{
     height: 100vh;
     top: 0;
     overflow: hidden;
-    z-index: 99;
+    z-index: 90;
     width: 100%;
 }
 
@@ -106,4 +111,41 @@ nav a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.heroContent{
+    position: relative;
+    z-index: 99;
+}
+
+.carTitle{
+}
+
+.carStats{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--bigFont);
+    font-weight: 700;
+    color: var(--redText);
+}
+
+.carName{
+    font-family: 'Bez';
+    font-size: 120px;
+    color: var(--heroCarName);
+    line-height: 75px;
+}
+
+.heroCar{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -35%);
+}
+
+#heroCar3d{
+    width: 100%;
+    height: 1000px;
+    
 }
