@@ -10,6 +10,7 @@
     --normFont: 20px;
     --midFont: 32px;
     --bigFont: 40px;
+    --cardFont: 48px;
     --vBigFont: 64px;
     --paragraphFont: 24px;
 }
@@ -29,8 +30,17 @@
     padding: 0;
 }
 
+body, html{
+    overflow-y: auto;
+    height: 100%;
+}
+
 html{
     scroll-behavior: smooth;
+}
+
+main{
+    scroll-snap-type: y proximity;
 }
 
 body{
@@ -141,6 +151,8 @@ model-viewer::part(default-progress-bar){
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 99;
 }
 
 .topBg{
@@ -149,6 +161,7 @@ model-viewer::part(default-progress-bar){
     background: linear-gradient(0deg, #FFF 0%, #242024 96.44%);
     position: absolute;
     top: 0;
+    z-index: 99;
 }
 
 .bottomBg{
@@ -157,6 +170,7 @@ model-viewer::part(default-progress-bar){
     background: radial-gradient(108.41% 108.41% at 50% 0%, #FFF 48.65%, #242024 91.83%);
     position: absolute;
     bottom: 0;
+    z-index: 99;
 }
 
 .circles{
@@ -166,6 +180,7 @@ model-viewer::part(default-progress-bar){
     overflow: hidden;
     z-index: 90;
     width: 100%;
+    z-index: 99;
 }
 
 .outer, .inner1, .inner2{
@@ -290,6 +305,9 @@ model-viewer::part(default-progress-bar){
 
 #about{
     padding: 60px 120px;
+    background-color: var(--mainBg);
+    position: relative;
+    z-index: 80;
 }
 
 .secTitle{
@@ -379,8 +397,8 @@ model-viewer::part(default-progress-bar){
     overflow-y: scroll;
     height: 100vh;
     position: relative;
-    padding: 60px 120px;
     box-sizing: border-box;
+    scroll-snap-align: center;
 }
 
 .test1, .test2, .test3{
@@ -408,6 +426,8 @@ model-viewer::part(default-progress-bar){
     height: 916px;
     box-sizing: border-box;
     background-position: center;
+    position: relative;
+    z-index: 80;
 }
 
 .introP{
@@ -449,14 +469,16 @@ model-viewer::part(default-progress-bar){
     width: 100%;
     overflow: hidden;
     height: 100vh;
+    pointer-events: none;
 }
 
 .scBg1{
     position: absolute;
     right: 0;
+    top: 0;
     height: 100vh;
     width: 70vw;
-    z-index: 5;
+    z-index: 0;
 }
 
 .scBg2{
@@ -465,3 +487,38 @@ model-viewer::part(default-progress-bar){
     top: 50px;
     width: 60%;
 }
+
+#porsche{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    scroll-snap-align: center;
+    padding: 60px 120px;
+}
+
+.sCarName{
+    font-family: 'Bez';
+    font-size: var(--cardFont);
+    color: var(--whiteText);
+}
+
+.model{
+    font-family: 'Mont';
+    font-size: var(--bigFont);
+    color: var(--redText);
+    font-weight: 700;
+}
+
+.sCarModel{
+    width: 100%;
+    height: 100%;
+}
+
+#porsche3d{
+    height: 100%;
+    width: 100%;
+}
+
