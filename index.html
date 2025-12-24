@@ -123,9 +123,12 @@
 
         <section id="superCars">
             <div class="sCarsSliderButtons">
-                <div class="leftBtn">
+                <button onclick="carSliderLeft()" id="leftBtn">
                     <img src="Images/Icons/arrLeft.svg" alt="">
-                </div>
+                </button>
+                <button onclick="carSliderRight()" id="rightBtn">
+                    <img src="Images/Icons/ArrRight.svg" alt="">
+                </button>
             </div>
             <div class="superCarsBg">
                 <img id="scBg1" src="Images/scBgTest.png" alt="">
@@ -133,9 +136,9 @@
             </div>
             <div id="sCarSlider">
                 <div id="porsche">
-                    <div id="carText">
+                    <div id="carText1">
                         <p class="sCarName">Porsche <br> <span class="model">GT3 RS</span></p>
-                        <div id="sCarStats">
+                        <div id="sCarStats1">
                             <div class="engineStat">
                                 <div class="statIcon">
                                     <img src="Images/Icons/EngineW.svg" alt="">
@@ -169,9 +172,9 @@
                     </div>
                 </div>
                 <div id="i8">
-                    <div class="carText">
+                    <div id="carText2">
                         <p class="sCarName">Bwi <br> <span class="model">i8</span></p>
-                        <div id="sCarStats">
+                        <div id="sCarStats2">
                             <div class="engineStat">
                                 <div class="statIcon">
                                     <img src="Images/Icons/EngineW.svg" alt="">
@@ -197,6 +200,42 @@
                     </div>
                     <div class="sCarModel">
                         <model-viewer id="i83d" src="Models/i8.glb" 
+                        tone-mapping="neutral"
+                        shadow-intensity="1" 
+                        camera-orbit="40.11deg 86.97deg 8.79m" 
+                        field-of-view="25.63deg"> </model-viewer>
+
+                    </div>
+                </div>
+                <div id="amg">
+                    <div id="carText3">
+                        <p class="sCarName">Mercedes <br> <span class="model">AMG GT</span></p>
+                        <div id="sCarStats3">
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/EngineW.svg" alt="">
+                                </div>
+                                <p class="statName">Engine</p>
+                                <p class="statNum2">4L V8</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/hpW.svg" alt="">
+                                </div>
+                                <p class="statName">Horsepoer</p>
+                                <p class="statNum2">456</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/speedW.svg" alt="">
+                                </div>
+                                <p class="statName">Top Speed</p>
+                                <p class="statNum2">304 <span class="metric">km/h</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCarModel">
+                        <model-viewer id="amg3d" src="Models/amg.glb" 
                         tone-mapping="neutral"
                         shadow-intensity="1" 
                         camera-orbit="40.11deg 86.97deg 8.79m" 
