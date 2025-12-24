@@ -3,6 +3,9 @@ let bg2 = document.getElementById("scBg2");
 let porsche = document.getElementById("porsche3d");
 let bmw = document.getElementById('i83d');
 let amg = document.getElementById('amg3d');
+let bentley = document.getElementById('bentely3d');
+let rolls = document.getElementById('rolls3d');
+let range = document.getElementById('range3d');
 
 function addCarHover(model, textId, statsId) {
   const carText = document.getElementById(textId);
@@ -28,3 +31,6 @@ function addCarHover(model, textId, statsId) {
 addCarHover(porsche, "carText1", "sCarStats1");
 addCarHover(bmw, "carText2", "sCarStats2");
 addCarHover(amg, "carText3", "sCarStats3");
+addCarHover(bentley, "carText4", "sCarStats4");
+addCarHover(range, "carText5", "sCarStats5");
+addCarHover(rolls, "carText6", "sCarStats6");

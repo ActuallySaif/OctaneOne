@@ -123,10 +123,10 @@
 
         <section id="superCars">
             <div class="sCarsSliderButtons">
-                <button onclick="carSliderLeft()" id="leftBtn">
+                <button onclick="carSliderLeft('sCarSlider')" id="leftBtn">
                     <img src="Images/Icons/arrLeft.svg" alt="">
                 </button>
-                <button onclick="carSliderRight()" id="rightBtn">
+                <button onclick="carSliderRight('sCarSlider')" id="rightBtn">
                     <img src="Images/Icons/ArrRight.svg" alt="">
                 </button>
             </div>
@@ -259,10 +259,10 @@
 
         <section id="luxuryCars">
             <div class="sCarsSliderButtons">
-                <button onclick="carSliderLeft()" id="leftBtnLux">
+                <button onclick="carSliderLeft('sCarSlider2')" id="leftBtnLux">
                     <img src="Images/Icons/arrLeft.svg" alt="">
                 </button>
-                <button onclick="carSliderRight()" id="rightBtnLux">
+                <button onclick="carSliderRight('sCarSlider2')" id="rightBtnLux">
                     <img src="Images/Icons/ArrRight.svg" alt="">
                 </button>
             </div>
@@ -301,6 +301,219 @@
                     </div>
                     <div class="sCarModel">
                         <model-viewer id="bentely3d" src="Models/bentely.glb" 
+                        tone-mapping="neutral"
+                        shadow-intensity="1" 
+                        camera-orbit="40.11deg 86.97deg 8.79m" 
+                        field-of-view="25.63deg"> </model-viewer>
+
+                    </div>
+                </div>
+
+                <div id="range">
+                    <div id="carText5">
+                        <p class="sCarName">Range Rover <br> <span class="model">Evoque</span></p>
+                        <div id="sCarStats5">
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/EngineW.svg" alt="">
+                                </div>
+                                <p class="statName">Engine</p>
+                                <p class="statNum2">2L 4Cyl</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/hpW.svg" alt="">
+                                </div>
+                                <p class="statName">Horsepoer</p>
+                                <p class="statNum2">246</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/speedW.svg" alt="">
+                                </div>
+                                <p class="statName">Top Speed</p>
+                                <p class="statNum2">217 <span class="metric">km/h</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCarModel">
+                        <model-viewer id="range3d" src="Models/Range.glb" 
+                        tone-mapping="neutral"
+                        shadow-intensity="1" 
+                        camera-orbit="40.11deg 86.97deg 8.79m" 
+                        field-of-view="25.63deg"> </model-viewer>
+
+                    </div>
+                </div>
+
+                <div id="rolls">
+                    <div id="carText6">
+                        <p class="sCarName">Rolls Royce <br> <span class="model">Ghost</span></p>
+                        <div id="sCarStats6">
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/EngineW.svg" alt="">
+                                </div>
+                                <p class="statName">Engine</p>
+                                <p class="statNum2">6.8L V12</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/hpW.svg" alt="">
+                                </div>
+                                <p class="statName">Horsepoer</p>
+                                <p class="statNum2">562</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/speedW.svg" alt="">
+                                </div>
+                                <p class="statName">Top Speed</p>
+                                <p class="statNum2">250 <span class="metric">km/h</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCarModel">
+                        <model-viewer id="rolls3d" src="Models/Rolls.glb" 
+                        tone-mapping="neutral"
+                        shadow-intensity="1" 
+                        camera-orbit="40.11deg 86.97deg 8.79m" 
+                        field-of-view="25.63deg"> </model-viewer>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="muscle">
+            <div class="secTitle2">
+                <p>Muscle</p>
+                <div class="titleLine2"></div>
+            </div>
+            <div class="introContent">
+                <p class="introP">Where craftsmanship meets elegance. Our luxury lineup features the finest interiors, advanced technology, and smooth performance designed for effortless travel.</p>
+                <a class="introBtn1" href="#luxuryCars">Explore</a>
+            </div>
+        </section>
+
+        <section id="muscleCars">
+            <div class="sCarsSliderButtons">
+                <button onclick="carSliderLeft('sCarSlider3')" id="leftBtnMuscle">
+                    <img src="Images/Icons/arrLeft.svg" alt="">
+                </button>
+                <button onclick="carSliderRight('sCarSlider3')" id="rightBtnMuscle">
+                    <img src="Images/Icons/ArrRight.svg" alt="">
+                </button>
+            </div>
+            <div class="superCarsBg">
+                <div id="muscleBg">
+                    <img id="triangle" src="Images/triangle.svg" alt="">
+                </div>
+            </div>
+            <div id="sCarSlider3">
+                <div id="bentley">
+                    <div id="carText4">
+                        <p class="sCarName">Bentely <br> <span class="model">Continental</span></p>
+                        <div id="sCarStats4">
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/EngineW.svg" alt="">
+                                </div>
+                                <p class="statName">Engine</p>
+                                <p class="statNum2">4L V8</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/hpW.svg" alt="">
+                                </div>
+                                <p class="statName">Horsepoer</p>
+                                <p class="statNum2">456</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/speedW.svg" alt="">
+                                </div>
+                                <p class="statName">Top Speed</p>
+                                <p class="statNum2">304 <span class="metric">km/h</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCarModel">
+                        <model-viewer id="bentely3d" src="Models/bentely.glb" 
+                        tone-mapping="neutral"
+                        shadow-intensity="1" 
+                        camera-orbit="40.11deg 86.97deg 8.79m" 
+                        field-of-view="25.63deg"> </model-viewer>
+
+                    </div>
+                </div>
+
+                <div id="range">
+                    <div id="carText5">
+                        <p class="sCarName">Range Rover <br> <span class="model">Evoque</span></p>
+                        <div id="sCarStats5">
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/EngineW.svg" alt="">
+                                </div>
+                                <p class="statName">Engine</p>
+                                <p class="statNum2">2L 4Cyl</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/hpW.svg" alt="">
+                                </div>
+                                <p class="statName">Horsepoer</p>
+                                <p class="statNum2">246</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/speedW.svg" alt="">
+                                </div>
+                                <p class="statName">Top Speed</p>
+                                <p class="statNum2">217 <span class="metric">km/h</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCarModel">
+                        <model-viewer id="range3d" src="Models/Range.glb" 
+                        tone-mapping="neutral"
+                        shadow-intensity="1" 
+                        camera-orbit="40.11deg 86.97deg 8.79m" 
+                        field-of-view="25.63deg"> </model-viewer>
+
+                    </div>
+                </div>
+
+                <div id="rolls">
+                    <div id="carText6">
+                        <p class="sCarName">Rolls Royce <br> <span class="model">Ghost</span></p>
+                        <div id="sCarStats6">
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/EngineW.svg" alt="">
+                                </div>
+                                <p class="statName">Engine</p>
+                                <p class="statNum2">6.8L V12</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/hpW.svg" alt="">
+                                </div>
+                                <p class="statName">Horsepoer</p>
+                                <p class="statNum2">562</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/speedW.svg" alt="">
+                                </div>
+                                <p class="statName">Top Speed</p>
+                                <p class="statNum2">250 <span class="metric">km/h</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCarModel">
+                        <model-viewer id="rolls3d" src="Models/Rolls.glb" 
                         tone-mapping="neutral"
                         shadow-intensity="1" 
                         camera-orbit="40.11deg 86.97deg 8.79m" 

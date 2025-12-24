@@ -7,7 +7,12 @@ setTimeout(() => {
 let sliderProg = 0;
 
 function carSliderRight(sliderTrackId) {
-  let sliderTrack = document.getElementById(sliderTrackId);
+  const sliderTrack = document.getElementById(sliderTrackId);
+  
+  if (!sliderTrack) {
+    console.error("Slider track not found:", sliderTrackId);
+    return;
+  }
 
   if (sliderProg > -200) {
     sliderProg -= 100
@@ -21,7 +26,7 @@ function carSliderRight(sliderTrackId) {
 
 
 function carSliderLeft(sliderTrackId) {
-  let sliderTrack = document.getElementById(sliderTrackId);
+  const sliderTrack = document.getElementById(sliderTrackId);
 
   if (sliderProg < 0) {
     sliderProg += 100
@@ -34,6 +39,5 @@ function carSliderLeft(sliderTrackId) {
 }
 
 
-carSliderLeft("sCarSlider");
-carSliderRight("sCarSlider");
+
 
