@@ -43,6 +43,7 @@
 body, html{
     overflow-y: auto;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -412,6 +413,16 @@ model-viewer::part(default-progress-bar){
     z-index: 80;
 }
 
+#luxury{
+    padding: 60px 120px;
+    background: url(Images/luxBg.png);
+    height: 916px;
+    box-sizing: border-box;
+    background-position: center;
+    position: relative;
+    z-index: 80;
+}
+
 .introP{
     font-size: var(--midFont);
     color: var(--whiteText);
@@ -428,7 +439,7 @@ model-viewer::part(default-progress-bar){
     height: 95%;
 }
 
-.introBtn{
+.introBtn1, .introBtn2{
     padding: 10px 75px;
     font-size: var(--midFont);
     font-weight: 600;
@@ -439,18 +450,18 @@ model-viewer::part(default-progress-bar){
     text-transform: uppercase;
 }
 
-.introBtn:hover{
+.introBtn1:hover, .introBtn2:hover{
     background-color: var(--whiteText);
     color: var(--redText);
 }
 
-#superCars{
+#superCars, #luxuryCars{
     height: 100vh;
     position: relative;
     box-sizing: border-box;
 }
 
-#sCarSlider{
+#sCarSlider, #sCarSlider2{
     display: flex;
     height: 100%;
     width: fit-content;
@@ -485,12 +496,12 @@ model-viewer::part(default-progress-bar){
     transition: all 300ms ease;
 }
 
-#carText1, #carText2, #carText3{
+#carText1, #carText2, #carText3, #carText4{
     transform: translateY(200px);
     transition: all 300ms ease;
 }
 
-#sCarStats1, #sCarStats2, #sCarStats3{
+#sCarStats1, #sCarStats2, #sCarStats3, #sCarStats4{
     margin-top: 53px;
     display: flex;
     gap: 100px;
@@ -498,7 +509,7 @@ model-viewer::part(default-progress-bar){
     transition: all 300ms ease;
 }
 
-#porsche, #i8, #amg{
+#porsche, #i8, #amg, #bentley{
     display: flex;
     align-items: center;
     height: 100%;
@@ -509,9 +520,10 @@ model-viewer::part(default-progress-bar){
     width: 100vw;
 }
 
-#porsche3d, #i83d, #amg3d{
+#porsche3d, #i83d, #amg3d, #bentely3d{
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
 
 
@@ -604,4 +616,25 @@ model-viewer::part(default-progress-bar){
     z-index: 9999;
     cursor: pointer;
     border: none;
+}
+
+#leftBtnLux, #rightBtnLux{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--whiteText);
+    border-radius: 90px;
+    position: relative;
+    z-index: 9999;
+    cursor: pointer;
+    border: none;
+}
+
+
+#luxBg{
+    background: linear-gradient(270deg, #E30220 0%, rgba(227, 2, 32, 0.00) 100%);
+    width: 100%;
+    height: 100%;
 }

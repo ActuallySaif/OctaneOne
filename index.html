@@ -117,7 +117,7 @@
             </div>
             <div class="introContent">
                 <p class="introP">Step into the world of extreme engineering. Our supercar collection brings together the most iconic machines built for speed, precision, and jaw-dropping performance. </p>
-                <a class="introBtn" href="#">Explore</a>
+                <a class="introBtn1" href="#superCars">Explore</a>
             </div>
         </section>
 
@@ -246,14 +246,68 @@
             </div>
         </section>
 
-        <section id="super">
+        <section id="luxury">
             <div class="secTitle2">
-                <p>Power</p>
+                <p>Comfort</p>
                 <div class="titleLine2"></div>
             </div>
             <div class="introContent">
-                <p class="introP">Step into the world of extreme engineering. Our supercar collection brings together the most iconic machines built for speed, precision, and jaw-dropping performance. </p>
-                <a class="introBtn" href="#">Explore</a>
+                <p class="introP">Where craftsmanship meets elegance. Our luxury lineup features the finest interiors, advanced technology, and smooth performance designed for effortless travel.</p>
+                <a class="introBtn1" href="#luxuryCars">Explore</a>
+            </div>
+        </section>
+
+        <section id="luxuryCars">
+            <div class="sCarsSliderButtons">
+                <button onclick="carSliderLeft()" id="leftBtnLux">
+                    <img src="Images/Icons/arrLeft.svg" alt="">
+                </button>
+                <button onclick="carSliderRight()" id="rightBtnLux">
+                    <img src="Images/Icons/ArrRight.svg" alt="">
+                </button>
+            </div>
+            <div class="superCarsBg">
+                <div id="luxBg">
+
+                </div>
+            </div>
+            <div id="sCarSlider2">
+                <div id="bentley">
+                    <div id="carText4">
+                        <p class="sCarName">Bentely <br> <span class="model">Continental</span></p>
+                        <div id="sCarStats4">
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/EngineW.svg" alt="">
+                                </div>
+                                <p class="statName">Engine</p>
+                                <p class="statNum2">4L V8</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/hpW.svg" alt="">
+                                </div>
+                                <p class="statName">Horsepoer</p>
+                                <p class="statNum2">456</p>
+                            </div>
+                            <div class="engineStat">
+                                <div class="statIcon">
+                                    <img src="Images/Icons/speedW.svg" alt="">
+                                </div>
+                                <p class="statName">Top Speed</p>
+                                <p class="statNum2">304 <span class="metric">km/h</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sCarModel">
+                        <model-viewer id="bentely3d" src="Models/bentely.glb" 
+                        tone-mapping="neutral"
+                        shadow-intensity="1" 
+                        camera-orbit="40.11deg 86.97deg 8.79m" 
+                        field-of-view="25.63deg"> </model-viewer>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
