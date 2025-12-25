@@ -37,7 +37,7 @@ addCarHover(amg, "carText3", "sCarStats3");
 addCarHover(bentley, "carText4", "sCarStats4");
 addCarHover(range, "carText5", "sCarStats5");
 addCarHover(rolls, "carText6", "sCarStats6");
-addCarHover(charger, "carText6", "sCarStats6");
-addCarHover(mustang, "carText6", "sCarStats6");
-addCarHover(camaro, "carText6", "sCarStats6");
+addCarHover(charger, "carText7", "sCarStats7");
+addCarHover(mustang, "carText8", "sCarStats8");
+addCarHover(camaro, "carText9", "sCarStats9");
 
