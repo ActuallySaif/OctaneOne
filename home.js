@@ -41,3 +41,14 @@ function carSliderLeft(sliderTrackId) {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Select all your car divs
+    const carDivs = document.querySelectorAll("#sCarSlider > div, #sCarSlider2 > div, #sCarSlider3 > div");
+
+    carDivs.forEach((carDiv, index) => {
+        carDiv.addEventListener("click", () => {
+            localStorage.setItem("selectedCarIndex", index); // save the index of the clicked car
+            window.location.href = "products.html"; // redirect to the product template
+        });
+    });
+});

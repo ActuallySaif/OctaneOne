@@ -43,16 +43,16 @@
             <div class="heroContent">
                 <div class="carTitle">
                     <div class="carStats">
-                        <p class="year">2021</p>
-                        <p class="engine">V10</p>
+                        <p id="carYear"></p>
+                        <p id="carEngine"></p>
                     </div>
-                    <p class="carName">AUDI R8</p>
+                    <p id="carName"></p>
                 </div>
                 <div class="heroCar">
                     <model-viewer id="heroCar3d" src="Models/r8.glb" 
                     tone-mapping="neutral" 
                     shadow-intensity="1" 
-                    camera-orbit="0deg 88.83deg 0.0915m" 
+                    camera-orbit="0deg 88.83deg 0.011m" 
                     interpolation-decay="400"
                     field-of-view="30deg"></model-viewer>
                 </div>
@@ -78,16 +78,16 @@
                 <div class="titleLine"></div>
             </div>
             <div class="aboutContent">
-                <p class="aboutP">
-                    Born on the track and refined for the road, the Porsche 911 GT3 RS represents the purest expression of Porsche’s motorsport DNA. Every surface, vent, and curve is engineered with one purpose: maximum performance. Powered by a high-revving naturally aspirated flat-six engine, the GT3 RS delivers razor-sharp throttle response and an emotional driving experience that modern turbocharged cars rarely match. Advanced aerodynamics — including a massive rear wing and active airflow management — generate extreme downforce, keeping the car planted at high speeds and through aggressive cornering. Inside, the GT3 RS balances race-focused minimalism with Porsche’s signature precision. Lightweight materials, driver-centric controls, and uncompromising feedback place the driver at the center of the experience. The GT3 RS isn’t built for comfort or compromise — it’s built for those who demand absolute performance, whether on the circuit or the open road.
+                <p id="aboutP">
+                    
                 </p>
                 <div class="aboutStats">
-                    <img class="productImg" src="Images/ProductsImgs/gt3.webp" alt="">
+                    <img id="productImg" src="Images/ProductsImgs/gt3.webp" alt="">
                 </div>
             </div>
         </section>
 
-        <section id="carSpecs"">
+        <section id="carSpecs">
             <div class="secTitle">
                 <div class="titleLineMobile"></div>
                 <p>specs</p>
@@ -102,66 +102,66 @@
                                 <p class="menuName">Power Unit</p>
                                 <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
                             </div>
-                            <p class="menuContent">A naturally aspirated 4.0-liter flat-six engineered for high-revving performance, delivering instant throttle response, race-bred reliability, and an unmistakable Porsche soundtrack.</p>
+                            <p id="specPower"></p>
                         </div>
                         <div class="menuDiv">
                             <div class="menuBtn">
                                 <p class="menuName">Performance</p>
                                 <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
                             </div>
-                            <p class="menuContent">Track-focused acceleration and razor-sharp handling, enhanced by advanced aerodynamics and motorsport-derived suspension for maximum cornering grip and lap-time precision.</p>
+                            <p id="specPerformance"></p>
                         </div>
                         <div class="menuDiv">
                             <div class="menuBtn">
                                 <p class="menuName">Body</p>
                                 <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
                             </div>
-                            <p class="menuContent">Lightweight construction with extensive use of carbon fiber, featuring aggressive aerodynamic elements designed to generate high downforce and improve stability at speed.</p>
+                            <p id="specBody"></p>
                         </div>
                         <div class="menuDiv">
                             <div class="menuBtn">
                                 <p class="menuName">Capacity</p>
                                 <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
                             </div>
-                            <p class="menuContent">Two-seat, driver-focused cockpit with minimal weight and maximum support, optimized for performance driving rather than passenger or cargo space.</p>
+                            <p id="specCapacity"></p>
                         </div>
                         <div class="menuDiv">
                             <div class="menuBtn">
                                 <p class="menuName">Emissions</p>
                                 <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
                             </div>
-                            <p class="menuContent">Engineered to meet modern emissions standards while preserving the character and responsiveness of a high-revving naturally aspirated performance engine.</p>
+                            <p id="specEmission"></p>
                         </div>
                         <div class="menuDiv">
                             <div class="menuBtn">
                                 <p class="menuName">Sound Level</p>
                                 <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
                             </div>
-                            <p class="menuContent">An intense, high-frequency exhaust note that builds toward a race-car-like scream at high RPMs, delivering an immersive and unmistakable driving experience.</p>
+                            <p id="specSound"></p>
                         </div>
                     </div>
 
                     <a class="viewBtn" href="#3dViewer">View in 3D</a>
                 </div>
 
-                <img class="specImg" src="Images/specsImg1.png" alt="">
+                <img id="specImg" src="Images/specsImg1.png" alt="">
 
                 <div class="specsDimensions">
                     <div class="dimSpec">
                         <p class="dimName">Width</p>
-                        <p class="dimNum">1,852 mm</p>
+                        <p id="width">1,852 mm</p>
                     </div>
                     <div class="dimSpec">
                         <p class="dimName">Height</p>
-                        <p class="dimNum">1,300 mm</p>
+                        <p id="height">1,300 mm</p>
                     </div>
                     <div class="dimSpec">
                         <p class="dimName">Wheelbase</p>
-                        <p class="dimNum">2,450 mm</p>
+                        <p id="wheelbase">2,450 mm</p>
                     </div>
                     <div class="dimSpec">
                         <p class="dimName">Length</p>
-                        <p class="dimNum">4,519 mm</p>
+                        <p id="carlength">4,519 mm</p>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
                 <div class="titleLine"></div>
             </div>
             <model-viewer id="engine3d"
-            src="Models/911Engine.glb" 
+ 
             camera-controls
             disable-zoom
             tone-mapping="neutral" 
@@ -206,7 +206,7 @@
             
             <div class="view3dModel">
                 <p class="view3dTitle">GT3 RS</p>
-                <model-viewer id="view3dCar" src="Models/911.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="43.47deg 80.14deg 8.269m" field-of-view="22.98deg" min-camera-orbit="auto 74deg 5.81m" min-field-of-view="13.71deg" max-camera-orbit="auto 91deg auto">
+                <model-viewer id="view3dCar"  ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="49.79deg 77.06deg 0.09658m" field-of-view="30deg" min-camera-orbit="auto 67deg auto" max-camera-orbit="auto 88deg auto">
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
                     </div>
