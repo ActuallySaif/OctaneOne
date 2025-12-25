@@ -8,15 +8,20 @@
     <link rel="icon" href="Images/Icon.png">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
-<body>
+
+<div id="preloader">
+    <img src="Images/octanePreload.gif" alt="">
+</div>
+
+<body class="loading">
     <div class="headerContainer">
         <header>
             <img src="Images/Logo.svg" alt="">
             <nav>
-                <a class="navSelected" href="index.html">
+                <a href="index.html">
                     HOME
                 </a>
-                <a href="#super">
+                <a class="navSelected" href="#super">
                     MODELS
                 </a>
                 <a href="#">
@@ -306,6 +311,9 @@
         </div>
     </footer>
 
+
+
+    <script src="preloader.js"></script>
     <script src="products.js"></script>
 </body>
 </html>

@@ -8,7 +8,12 @@
     <link rel="icon" href="Images/Icon.png">
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
-<body>
+
+<div id="preloader">
+    <img src="Images/octanePreload.gif" alt="">
+</div>
+
+<body class="loading">
     <div class="headerContainer">
         <header>
             <img src="Images/Logo.svg" alt="">
@@ -341,7 +346,7 @@
                         </div>
                     </div>
                     <div class="sCarModel">
-                        <model-viewer id="range3d" src="Models/Range.glb" 
+                        <model-viewer id="range3d" src="Models/range.glb" 
                         tone-mapping="neutral"
                         shadow-intensity="1" 
                         camera-orbit="40.11deg 86.97deg 8.79m" 
@@ -378,7 +383,7 @@
                         </div>
                     </div>
                     <div class="sCarModel">
-                        <model-viewer id="rolls3d" src="Models/Rolls.glb" 
+                        <model-viewer id="rolls3d" src="Models/rolls.glb" 
                         tone-mapping="neutral"
                         shadow-intensity="1" 
                         camera-orbit="40.11deg 86.97deg 8.79m" 
@@ -397,7 +402,7 @@
             </div>
             <div class="introContent">
                 <p class="introP">Where craftsmanship meets elegance. Our luxury lineup features the finest interiors, advanced technology, and smooth performance designed for effortless travel.</p>
-                <a class="introBtn1" href="#luxuryCars">Explore</a>
+                <a class="introBtn1" href="#muscleCars">Explore</a>
             </div>
         </section>
 
@@ -481,7 +486,7 @@
                         </div>
                     </div>
                     <div class="sCarModel">
-                        <model-viewer id="mustang3d" src="Models/Mustang.glb" 
+                        <model-viewer id="mustang3d" src="Models/mustang.glb" 
                         tone-mapping="neutral"
                         shadow-intensity="1" 
                         camera-orbit="40.11deg 86.97deg 8.79m" 
@@ -518,7 +523,7 @@
                         </div>
                     </div>
                     <div class="sCarModel">
-                        <model-viewer id="camaro3d" src="Models/Camaro.glb" 
+                        <model-viewer id="camaro3d" src="Models/camaro.glb" 
                         tone-mapping="neutral"
                         shadow-intensity="1" 
                         camera-orbit="40.11deg 86.97deg 8.79m" 
@@ -582,7 +587,7 @@
         </div>
     </footer>
 
-
+    <script src="preloader.js"></script>
     <script src="home.js"></script>
     <script src="carHover.js"></script>
 </body>
