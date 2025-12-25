@@ -966,7 +966,98 @@ model-viewer::part(default-progress-bar){
 
 #feedback{
     padding: 60px 120px;
+    display: flex;
+    flex-direction: column;
 }
+
+form{
+    margin-top: 60px;
+}
+
+.feedbackSection {
+            background-color: #2a2a2a;
+            padding: 60px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .feedbackTitle {
+            font-size: 48px;
+            font-weight: 700;
+            color: #cc0000;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+        }
+
+        .redLine {
+            width: 100%;
+            height: 2px;
+            background-color: #cc0000;
+            margin-bottom: 60px;
+        }
+
+        .formGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .formGroup {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formGroup label {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .formGroup input,
+        .formGroup textarea {
+            padding: 20px;
+            border: 3px solid #cc0000;
+            border-radius: 15px;
+            background-color: #f5f5f5;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+
+        .formGroup input:focus,
+        .formGroup textarea:focus {
+            background-color: #fff;
+        }
+
+        .messageGroup {
+            grid-column: 2;
+            grid-row: 1 / 4;
+        }
+
+        .messageGroup textarea {
+            height: 100%;
+            resize: none;
+            min-height: 200px;
+        }
+
+        .submitButton {
+            display: block;
+            margin: 40px auto 0;
+            padding: 18px 80px;
+            background-color: #cc0000;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
 
 
 /* //////////////////////// Media queiries //////////////////////// */
@@ -1275,5 +1366,9 @@ footer{
 .footerColumn{
     text-align: center;
     
+}
+
+#carSpecs{
+    flex-direction: column;
 }
 }
