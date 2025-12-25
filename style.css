@@ -74,6 +74,7 @@ header{
     box-sizing: border-box;
     opacity: 0;
     animation: heroFader 500ms ease 4s forwards;
+    backdrop-filter: blur(2px);
 }
 
 nav{
@@ -797,7 +798,175 @@ model-viewer::part(default-progress-bar){
 
 
 
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+/* ///////////////////////PRODUCTS PAGE////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
 
+
+#carAbout{
+    padding: 60px 120px;
+    background-color: var(--mainBg);
+    position: relative;
+    z-index: 80;
+}  
+
+.productImg{
+    width: 100%;
+}
+
+#carSpecs{
+    padding: 60px 120px;
+    
+}
+
+.specsContent{
+    display: flex;
+    margin-top: 114px;
+    align-items: center;
+    gap: 50px;
+}
+
+.specsLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 98px;
+}
+
+.sMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuDiv{
+    position: relative;
+}
+
+.menuDiv:hover .menuContent{
+    top: 40px;
+    display: block;
+    opacity: 1;
+    position: static;
+}
+
+.menuBtn{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px white solid;
+}
+
+.menuName{
+    font-size: var(--midFont);
+    color: var(--whiteText);
+    font-weight: 700;
+}
+
+.menuContent{
+    padding: 20px 0;
+    font-size: var(--paragraphFont);
+    color: var(--whiteText);
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 200ms ease;
+}
+
+.viewBtn{
+    padding: 27px 75px;
+    background-color: var(--redAccents);
+    border-radius: 30px;
+    font-size: var(--midFont);
+    color: var(--whiteText);
+    font-weight: 600;
+    transition: all 200ms ease;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.viewBtn:hover{
+    background-color: var(--whiteText);
+    color: var(--redText);
+}
+
+.specImg{
+    height: 977px;
+    
+}
+
+.specsDimensions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 135px;
+    box-sizing: border-box;
+}
+
+.dimSpec{
+    width: 100%;
+    text-align: center;
+}
+
+.dimName{
+    font-size: var(--paragraphFont);
+    color: var(--whiteText);
+    font-weight: 700;
+    
+}
+
+.dimNum{
+    font-size: var(--bigFont);
+    color: var(--whiteText);
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+
+#engineView{
+    padding: 60px 120px;
+}
+
+#engine3d{
+    width: 100%;
+    height: 90vh;
+}
+
+#view3d{
+    padding: 60px 120px;
+}
+
+.view3dModel{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: #D9D9D9;
+    position: relative;
+    height: 856px;
+}
+
+.view3dTitle{
+    font-size: 264px;
+    font-weight: 800;
+    color: var(--heroCarName);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-wrap: nowrap;
+}
+
+#view3dCar{
+    width: 100%;
+    height: 100%;
+}
+
+#feedback{
+    padding: 60px 120px;
+}
 
 
 /* //////////////////////// Media queiries //////////////////////// */
@@ -1105,5 +1274,6 @@ footer{
 
 .footerColumn{
     text-align: center;
+    
 }
 }

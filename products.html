@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octane One | Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Icon.png">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="headerContainer">
+        <header>
+            <img src="Images/Logo.svg" alt="">
+            <nav>
+                <a class="navSelected" href="index.html">
+                    HOME
+                </a>
+                <a href="#super">
+                    MODELS
+                </a>
+                <a href="#">
+                    CONTACT
+                </a>
+                <a href="#about">
+                    ABOUT
+                </a>
+            </nav>
+            <img id="brgrBtn" src="Images/burger.svg" alt="">
+        </header>
+    </div>
+
+    <main>
+        <section id="hero">
+            <div class="topBg"></div>
+            <div class="bottomBg"></div>
+            <div class="circles">
+                <img class="outer" src="Images/circles/outer.svg" alt="">
+                <img class="inner1" src="Images/circles/inner1.svg" alt="">
+                <img class="inner2" src="Images/circles/inner2.svg" alt="">
+                <img class="lines" src="Images/circles/lines.svg" alt="">
+            </div>
+            <div class="heroContent">
+                <div class="carTitle">
+                    <div class="carStats">
+                        <p class="year">2021</p>
+                        <p class="engine">V10</p>
+                    </div>
+                    <p class="carName">AUDI R8</p>
+                </div>
+                <div class="heroCar">
+                    <model-viewer id="heroCar3d" src="Models/r8.glb" 
+                    tone-mapping="neutral" 
+                    shadow-intensity="1" 
+                    camera-orbit="0deg 88.83deg 0.0915m" 
+                    interpolation-decay="400"
+                    field-of-view="30deg"></model-viewer>
+                </div>
+                <a href="#about" class="discoverBtn">
+                    <p>DISCOVER MORE</p>
+                    <div class="btnArrow">
+                        <img class="btnBg" src="Images/BtnBg.svg" alt="">
+                        <img src="Images/arrow.svg" alt="">
+                    </div>
+                </a>
+                <div class="heroSocials">
+                    <img src="Images/insta.svg" alt="">
+                    <img src="Images/x.svg" alt="">
+                    <img src="Images/fb.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="carAbout">
+            <div class="secTitle">
+                <div class="titleLineMobile"></div>
+                <p>about</p>
+                <div class="titleLine"></div>
+            </div>
+            <div class="aboutContent">
+                <p class="aboutP">
+                    Born on the track and refined for the road, the Porsche 911 GT3 RS represents the purest expression of Porsche’s motorsport DNA. Every surface, vent, and curve is engineered with one purpose: maximum performance. Powered by a high-revving naturally aspirated flat-six engine, the GT3 RS delivers razor-sharp throttle response and an emotional driving experience that modern turbocharged cars rarely match. Advanced aerodynamics — including a massive rear wing and active airflow management — generate extreme downforce, keeping the car planted at high speeds and through aggressive cornering. Inside, the GT3 RS balances race-focused minimalism with Porsche’s signature precision. Lightweight materials, driver-centric controls, and uncompromising feedback place the driver at the center of the experience. The GT3 RS isn’t built for comfort or compromise — it’s built for those who demand absolute performance, whether on the circuit or the open road.
+                </p>
+                <div class="aboutStats">
+                    <img class="productImg" src="Images/ProductsImgs/gt3.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="carSpecs"">
+            <div class="secTitle">
+                <div class="titleLineMobile"></div>
+                <p>specs</p>
+                <div class="titleLine"></div>
+            </div>
+
+            <div class="specsContent">
+                <div class="specsLeft">
+                    <div class="sMenu">
+                        <div class="menuDiv">
+                            <div class="menuBtn">
+                                <p class="menuName">Power Unit</p>
+                                <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
+                            </div>
+                            <p class="menuContent">A naturally aspirated 4.0-liter flat-six engineered for high-revving performance, delivering instant throttle response, race-bred reliability, and an unmistakable Porsche soundtrack.</p>
+                        </div>
+                        <div class="menuDiv">
+                            <div class="menuBtn">
+                                <p class="menuName">Performance</p>
+                                <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
+                            </div>
+                            <p class="menuContent">Track-focused acceleration and razor-sharp handling, enhanced by advanced aerodynamics and motorsport-derived suspension for maximum cornering grip and lap-time precision.</p>
+                        </div>
+                        <div class="menuDiv">
+                            <div class="menuBtn">
+                                <p class="menuName">Body</p>
+                                <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
+                            </div>
+                            <p class="menuContent">Lightweight construction with extensive use of carbon fiber, featuring aggressive aerodynamic elements designed to generate high downforce and improve stability at speed.</p>
+                        </div>
+                        <div class="menuDiv">
+                            <div class="menuBtn">
+                                <p class="menuName">Capacity</p>
+                                <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
+                            </div>
+                            <p class="menuContent">Two-seat, driver-focused cockpit with minimal weight and maximum support, optimized for performance driving rather than passenger or cargo space.</p>
+                        </div>
+                        <div class="menuDiv">
+                            <div class="menuBtn">
+                                <p class="menuName">Emissions</p>
+                                <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
+                            </div>
+                            <p class="menuContent">Engineered to meet modern emissions standards while preserving the character and responsiveness of a high-revving naturally aspirated performance engine.</p>
+                        </div>
+                        <div class="menuDiv">
+                            <div class="menuBtn">
+                                <p class="menuName">Sound Level</p>
+                                <img id="ddArrow" src="Images/dropDownArrow.svg" alt="">
+                            </div>
+                            <p class="menuContent">An intense, high-frequency exhaust note that builds toward a race-car-like scream at high RPMs, delivering an immersive and unmistakable driving experience.</p>
+                        </div>
+                    </div>
+
+                    <a class="viewBtn" href="#3dViewer">View in 3D</a>
+                </div>
+
+                <img class="specImg" src="Images/specsImg1.png" alt="">
+
+                <div class="specsDimensions">
+                    <div class="dimSpec">
+                        <p class="dimName">Width</p>
+                        <p class="dimNum">1,852 mm</p>
+                    </div>
+                    <div class="dimSpec">
+                        <p class="dimName">Height</p>
+                        <p class="dimNum">1,300 mm</p>
+                    </div>
+                    <div class="dimSpec">
+                        <p class="dimName">Wheelbase</p>
+                        <p class="dimNum">2,450 mm</p>
+                    </div>
+                    <div class="dimSpec">
+                        <p class="dimName">Length</p>
+                        <p class="dimNum">4,519 mm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="engineView">
+            <div class="secTitle">
+                <div class="titleLineMobile"></div>
+                <p>Engine</p>
+                <div class="titleLine"></div>
+            </div>
+            <model-viewer id="engine3d"
+            src="Models/911Engine.glb" 
+            camera-controls
+            disable-zoom
+            tone-mapping="neutral" 
+            camera-orbit="17deg 74deg 5.682m" 
+            field-of-view="17.6deg" 
+            min-camera-orbit="-16deg 74deg auto" 
+            max-camera-orbit="17deg 91deg auto">
+    <button class="Hotspot" slot="hotspot-1" data-position="-0.30258556335003706m 0.8135194245285592m 0.2965263446405868m" data-normal="0.9615173190752025m -0.24102912853347241m 0.13186889063319712m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Exhaust</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="0.34174204274213993m 0.5071748199454023m 1.4397958896251954m" data-normal="0.2519875210834898m -0.17991647683304846m 0.9508587437585989m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Ventilation</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="-0.010079305033794783m 0.6771292182709774m 0.34095875305482615m" data-normal="0.9973933160701464m -0.019140085959044352m 0.0695717627207872m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Engine Block</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="0.4949688558377487m 0.8332056412803837m 0.03783912128323663m" data-normal="0.38501948728263863m 0.8983327975269244m 0.2115612897012687m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Fuel Intake</div>
+    </button>
+</model-viewer>
+
+
+        </section>
+
+
+        <section id="view3d">
+            <div class="secTitle">
+                <div class="titleLineMobile"></div>
+                <p>View in 3d</p>
+                <div class="titleLine"></div>
+            </div>
+            
+            <div class="view3dModel">
+                <p class="view3dTitle">GT3 RS</p>
+                <model-viewer id="view3dCar" src="Models/911.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls camera-orbit="43.47deg 80.14deg 8.269m" field-of-view="22.98deg" min-camera-orbit="auto 74deg 5.81m" min-field-of-view="13.71deg" max-camera-orbit="auto 91deg auto">
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <div id="ar-prompt">
+                        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                    </div>
+                </model-viewer>
+            </div>
+        </section>
+
+        <section id="feedback">
+            <div class="secTitle">
+                <div class="titleLineMobile"></div>
+                <p>Feedback</p>
+                <div class="titleLine"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="products.js"></script>
+</body>
+</html>
