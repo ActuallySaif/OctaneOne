@@ -95,6 +95,10 @@ nav a:hover{
     border-bottom: 3px #e3022046 solid;
 }
 
+#brgrBtn{
+    display: none;
+}
+
 @keyframes heroFlicker {
     0%{
         opacity: 0;
@@ -343,6 +347,22 @@ model-viewer::part(default-progress-bar){
     background-color: var(--redAccents);
     width: 100%;
     box-sizing: border-box;
+}
+
+.titleLineMobile{
+    height: 3px;
+    background-color: var(--redAccents);
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.titleLineMobile2{
+    height: 3px;
+    background-color: var(--whiteText);
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
 }
 
 .titleLine2{
@@ -774,3 +794,167 @@ model-viewer::part(default-progress-bar){
             font-size: 14px;
             line-height: 1.8;
         }
+
+
+
+
+
+
+/* //////////////////////// Media queiries //////////////////////// */
+
+
+
+
+@media screen and (max-width: 390px) {
+    header{
+        padding: 20px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #brgrBtn{
+        display: block;
+    }
+
+    .heroContent{
+        padding: 20px;
+    }
+
+    .carName{
+        font-size: 30px;
+    }
+
+    .heroSocials{
+        display: none;
+    }
+
+    #about{
+        padding: 20px;
+    }
+
+    .secTitle{
+        font-size: var(--normFont);
+    }
+
+    .titleLineMobile{
+        display: block;
+    }
+
+    .aboutContent{
+        flex-direction: column;
+    }
+
+    .aboutP{
+        width: 100%;
+        font-size: var(--smallFont);
+        text-align: center;
+        
+    }
+
+    .aboutStats{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #super, #luxury, #muscle{
+        padding: 20px;
+    }
+
+    .titleLineMobile2{
+        display: block;
+    }
+
+    .secTitle2{
+        font-size: var(--normFont);
+    }
+
+    .introP{
+        font-size: var(--midFont);
+    }
+
+    .sCarsSliderButtons{
+        padding: 20px;
+    }
+
+    #porsche, #i8, #amg, #bentley, #range, #rolls, #charger, #mustang, #camaro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    width: 100vw;
+}
+
+.sCarModel{
+    width: 100%;
+    top: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sCarName{
+    font-size: var(--paragraphFont);
+}
+
+#carText1, #carText2, #carText3, #carText4, #carText5, #carText6, #carText7, #carText8, #carText9{
+    transform: translateY(200px);
+    transition: all 300ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#sCarStats1, #sCarStats2, #sCarStats3, #sCarStats4, #sCarStats5, #sCarStats6, #sCarStats7, #sCarStats8, #sCarStats9{
+    margin-top: 53px;
+    display: flex;
+    opacity: 0;
+    transition: all 300ms ease;
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.engineStat{
+    width: 79px;
+}
+
+.statName{
+    font-size: var(--smallFont);
+}
+
+.statNum2{
+    font-size: var(--paragraphFont);
+}
+
+.statIcon{
+    width: 52.685px;
+    height: 52.685px;
+    padding: 20px;
+}
+
+footer{
+    padding: 20px;
+}
+
+.footerContainer{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.footerSocials{
+    justify-content: space-around;
+}
+
+.footerColumn{
+    text-align: center;
+}
+}
